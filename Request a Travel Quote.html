@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Ultragrand Travel & Tour</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+<style>
+body{
+  background-image: url(Images/bg.avif);
+  background-position: center;
+  background-size: cover;
+}
+
+
+*{
+font-size: 26px;
+}
+ 
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 51px;
+    }
+
+    h3 {
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 51px;
+    text-align: center;
+    }
+
+p{
+  text-align: center;
+  }
+
+h2 {
+  font-family: sans-serif;
+  text-align: center;
+   }
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+     }
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+     }
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 507px;
+   
+     }
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     }
+
+button:hover {
+    background-color: #45a049;
+     }
+ 
+.RQ {
+  background: url(images/skies.webp) no-repeat center center/cover;
+  font-family: cookie, cursive;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+.agent {
+  color:#100000;
+  }
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+ 
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.reset-btn:hover{
+  background-color: #e53935;
+}
+
+header{
+  border-color: grey;
+}
+
+.card {
+  font-size: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.2s;
+  }
+
+
+
+  
+    </style>
+</head>
+<body>
+
+<header>
+ 
+    <div>
+    <h1>Ultragrand Travel & Tour</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="Experiences.html">Experiences</a>
+      <a href="Request a Travel Quote.html">Request a Travel Quote</a>
+      <a href="Contact Us.html">Contact Us</a>
+      <a href="Blog.html">Blog</a>
+    </nav>
+    </div>
+</header>
+
+
+<div class="card">
+  
+    <h3>VACATION QUESTIONNAIRE</h3>
+    <p>
+      Thank you for your interest in planning a vacation with Ultragrand Travel. <br>We are looking forward to creating the worry-free vacation of your dreams.<br> This form is the first step in our vacation planning process.<br> Our agents will use this information to design a custom vacation package.
+    </p>
+    <form action="submit-form" method="POST">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Phone Number -->
+        <label for="Phone Number">Phone Number:</label>
+        <input type="text" id="number" name="number" required>
+
+        <!-- Travel Advisor -->
+        <label for="advisor">Select Travel Advisor's Name:</label>
+        <select id="advisor" name="advisor">
+            <option value="">Choose an option</option>
+            <option value="advisor">Abena</option>
+            <option value="advisor2">Kwame</option>
+            <option value="advisor3">Opoku</option>
+        </select>
+
+        <!-- Vacation Type -->
+        <label for="vacationType">Select Vacation Type:</label>
+        <select id="vacationType" name="vacationType">
+            <option value="">Choose an option</option>
+            <option value="beach">Beach</option>
+            <option value="adventure">Adventure</option>
+            <option value="Tourist Sites">Tourist Sites</option>
+            <option value="Cruise">Cruise</option>
+        </select>
+
+        <!-- Travelers -->
+        <label for="travelers">How many travelers? (List children's ages if applicable):</label>
+        <textarea id="travelers" name="travelers" rows="3"></textarea>
+
+        <!-- Dates -->
+        <label for="dates">Dates of Travel? (Departure & Return):</label>
+        <input type="text" id="dates" name="dates" placeholder="e.g., Jan 1 - Jan 7">
+
+         <!-- Destination -->
+         <label for="Destination">where do you want to go?</label>
+         <input type="text" id="destination" name="Destination">
+
+          <!-- Booking Timeframe -->
+          <label for="timeframe">how soon are you looking to book your vacation?</label>
+          <input type="text" id="timeframe" name="timeframe">
+
+          <!-- Budget -->
+          <label for="Budget">Tell us more & include your budget:</label>
+          <textarea id="budget" name="budget" rows="3"></textarea>
+
+          <!-- submit and Reset buttons -->
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+
+      <div class="RQ">
+        <h2></h2>
+       
+    </div>
+
+
+   
+
+    <div class="card">
+    <h2>WHY USE ULTRAGRAND TRAVEL & Tour</h2>
+    <p>
+    Ultragrand Travel & Tour offer expert and firsthand advice on destinations, plan trip itineraries, and make travel arrangements for clients. Best of all, these VIP services are offered FREE to our clients.
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+<footer>
+  <p>
+1st Floor Darkwaa Plaza Near Community 11, Tema Ghana. <br> &copy; 2024 Ultragrand Travel & Tour.<br> All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
